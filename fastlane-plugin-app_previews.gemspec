@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-app_previews'
   spec.version       = Fastlane::AppPreviews::VERSION
   spec.author        = 'Fausto'
-  spec.email         = 'fausto91@gmail.com'
+  spec.email         = 'doublerew@gmail.com'
 
   spec.summary       = 'Upload app previews to the App Store Connect'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-app_previews"
+  spec.homepage      = "https://github.com/DoubleREW/fastlane-plugin-app_previews"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)

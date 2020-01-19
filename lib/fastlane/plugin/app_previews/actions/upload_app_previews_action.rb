@@ -159,14 +159,14 @@ module Fastlane
                                   env_name: "UPLOAD_APP_PREVIEWS_PREVIEWS_PATH",
                                description: "Root path where app previews are stored",
                                   optional: false,
-                                      type: String)
+                                      type: String),
                                       
           FastlaneCore::ConfigItem.new(key: :skip_langs,
                                       env_name: "UPLOAD_APP_PREVIEWS_SKIP_LANGS",
                                    description: "An optional list of lang codes (comma separated) to skip",
                                       optional: true,
                                           type: String
-                                 default_value: "")
+                                 default_value: ""),
                                       
           FastlaneCore::ConfigItem.new(key: :regenerate_posters,
                                       env_name: "UPLOAD_APP_PREVIEWS_REGENERATE_POSTERS",
@@ -181,7 +181,7 @@ module Fastlane
         # Adjust this if your plugin only works for a particular platform (iOS vs. Android, for example)
         # See: https://docs.fastlane.tools/advanced/#control-configuration-by-lane-and-by-platform
         
-        [:ios, :android].include?(platform)
+        [:ios].include?(platform)
       end
     end
   end
