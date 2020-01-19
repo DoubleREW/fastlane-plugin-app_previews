@@ -2,7 +2,7 @@ require 'fastlane/action'
 require 'spaceship'
 require 'json'
 require 'fileutils'
-require_relative '../helper/upload_app_previews_helper'
+require_relative '../helper/app_previews_helper'
 
 module Fastlane
   module Actions
@@ -165,7 +165,7 @@ module Fastlane
                                       env_name: "UPLOAD_APP_PREVIEWS_SKIP_LANGS",
                                    description: "An optional list of lang codes (comma separated) to skip",
                                       optional: true,
-                                          type: String
+                                          type: String,
                                  default_value: ""),
                                       
           FastlaneCore::ConfigItem.new(key: :regenerate_posters,
